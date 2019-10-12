@@ -1,0 +1,139 @@
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/relativeLayout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="403dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="120dp"
+                    android:gravity="center"
+                    android:text="Add Accout"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <EditText
+                android:id="@+id/passEditTxt"
+                android:layout_width="236dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/unameEditTxt" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="109dp"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="8dp"
+                android:text="Username"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/unameEditTxt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="109dp"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="8dp"
+                android:text="Password"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/passEditTxt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="109dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="8dp"
+                android:text="Account             "
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/accEditTxt"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/accEditTxt"
+                android:layout_width="236dp"
+                android:layout_height="37dp"
+                android:layout_alignTop="@+id/textView"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="40dp"
+                android:layout_toEndOf="@+id/textView"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/unameEditTxt"
+                android:layout_width="236dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/accEditTxt" />
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="298dp"
+                android:layout_height="63dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:onClick="addNew"
+                android:text="Add New Account"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passEditTxt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
